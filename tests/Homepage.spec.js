@@ -102,3 +102,4 @@ test('TC-HOME-003 - Verify Homepage renders correctly at mobile viewport', async
 
     expect(pageWidth).toBeLessThanOrEqual(viewportWidth);
 });
+
