@@ -25,11 +25,11 @@ test('TC-HOME-001 - Verify each social media icon is functional and redirects to
   }
 });
 
-test.only('TC-HOME-002 - Verify main navigation from Homepage routes to the correct pages', async ({ page }) => {
-
-  await signupUser(page);
-
-  await signInUser(page);
+test('TC-HOME-002 - Verify main navigation from Homepage routes to the correct pages', async ({ page }) => {
+    await signupUser(page);
+    await signInUser(page);
+    // Open application
+    await page.goto('https://food-recipe-finder-two.vercel.app/');
 
   // Verify successful login
   await expect(page).toHaveURL(/home/i);
@@ -77,3 +77,4 @@ test('TC-HOME-003 - Verify Homepage renders correctly at mobile viewport', async
 
   expect(pageWidth).toBeLessThanOrEqual(viewportWidth);
 });
+

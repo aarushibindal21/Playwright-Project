@@ -15,7 +15,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
 
   // Number of parallel workers
-  workers: 1,
+  workers: 6,
 
   // Reporter
   reporter: [
@@ -29,7 +29,7 @@ export default defineConfig({
     baseURL: 'https://food-recipe-finder-two.vercel.app/',
 
     // Run browser in normal mode
-    headless: false,
+    headless: true,
 
     // Capture information useful for failure analysis
     screenshot: 'only-on-failure',

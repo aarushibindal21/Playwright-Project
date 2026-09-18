@@ -64,7 +64,7 @@ test('TC-SIGNIN-003 - Verify validation when username and password are left empt
     
 });
 
-test.only('TC-SIGNIN-004 - Verify password visibility can be toggled via the eye icon', async ({ page }) => {
+test('TC-SIGNIN-004 - Verify password visibility can be toggled via the eye icon', async ({ page }) => {
     
     // Navigate to Signup page
     await signupUser(page);
