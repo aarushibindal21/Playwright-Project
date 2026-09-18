@@ -1,3 +1,5 @@
+import { expect } from "@playwright/test";
+
 async function signInUser(page) {
     await page.locator('#userName').fill('testuser123');
     
@@ -11,4 +13,4 @@ async function signInUser(page) {
         await expect(page).toHaveURL(/home/i);
 }
 
-export{signInUser}
+export {signInUser}
