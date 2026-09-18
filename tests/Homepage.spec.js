@@ -34,7 +34,7 @@ test('TC-HOME-001 - Verify each social media icon is functional and redirects to
 
 
 
-test.only('TC-HOME-002 - Verify main navigation from Homepage routes to the correct pages', async ({ page }) => {
+test('TC-HOME-002 - Verify main navigation from Homepage routes to the correct pages', async ({ page }) => {
     await signupUser(page);
     await signInUser(page);
     // Open application
