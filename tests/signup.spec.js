@@ -86,7 +86,7 @@ test('TC-SIGNUP-003 - Verify signup fails when the email is not in a valid forma
 });
 
 
-test.only('TC-SIGNUP-004 - Verify signup form renders correctly and show/hide password icons work', async ({ page }) => {
+test('TC-SIGNUP-004 - Verify signup form renders correctly and show/hide password icons work', async ({ page }) => {
 
     // Open application
     await page.goto('https://food-recipe-finder-two.vercel.app/');
