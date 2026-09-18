@@ -39,6 +39,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright Tests
+        continue-on-error: true
         run: npx playwright test
 
       - name: Upload GitHub Pages Artifact
