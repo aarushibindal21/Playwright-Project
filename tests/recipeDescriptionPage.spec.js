@@ -64,7 +64,7 @@ test('TC-RECIPE-001 - Verify recipe details render correctly and Like button tog
 });
 
 
-test.only('TC-RECIPE-002 - Verify YouTube link opens the correct video', async ({ page }) => {
+test('TC-RECIPE-002 - Verify YouTube link opens the correct video', async ({ page }) => {
 
     // Sign up and sign in user
     await signupUser(page);
